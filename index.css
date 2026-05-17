@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "CustomFont02", "Noto Sans SC", sans-serif;
+  --font-serif: "Noto Serif SC", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "CustomFont02", "JetBrains Mono", monospace;
+  --font-custom-02: "CustomFont02", "Noto Sans SC", sans-serif;
+  --font-retro-pixel: "RetroPixel", "JetBrains Mono", monospace;
+  --font-blood: "BloodFont", "Noto Sans SC", sans-serif;
+
+  --color-ash-black: var(--ash-black);
+  --color-ash-dark: var(--ash-dark);
+  --color-ash-gray: var(--ash-gray);
+  --color-ash-light: var(--ash-light);
+  --color-ash-white: var(--ash-white);
+  --color-retro-paper: var(--retro-paper);
+
+  --animate-glitch: glitch 1s linear infinite;
+  --animate-scanline: scanline 8s linear infinite;
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+  --animate-slide-in: slideIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  --animate-crash: crash 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  --animate-spin-slow: spin 12s linear infinite;
+  --animate-spin-reverse-slow: spinReverse 15s linear infinite;
+  --animate-zoom-in-fast: zoomIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  --animate-tunnel: tunnel 2s linear infinite;
+  --animate-data-rain: dataRain 2s linear infinite;
+  --animate-data-rain-card: dataRainCard 2s linear infinite;
+  --animate-shake-violent: shakeViolent 0.25s infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+  --animate-float-up-slow: floatUp 20s linear infinite;
+  --animate-float-up-medium: floatUp 15s linear infinite;
+  --animate-float-up-fast: floatUp 10s linear infinite;
+  --animate-sweep: sweep 4s ease-in-out infinite alternate;
+  --animate-sweep-reverse: sweepReverse 5s ease-in-out infinite alternate;
+
+  @keyframes sweep {
+    0% { transform: translateX(-100%) skew(-12deg); }
+    100% { transform: translateX(200%) skew(-12deg); }
+  }
+  @keyframes sweepReverse {
+    0% { transform: translateX(200%) skew(-12deg); }
+    100% { transform: translateX(-100%) skew(-12deg); }
+  }
+
+  @keyframes glitch {
+    2%, 64% { transform: translate(2px,0) skew(0deg); }
+    4%, 60% { transform: translate(-2px,0) skew(0deg); }
+    62% { transform: translate(0,0) skew(5deg); }
+  }
+  @keyframes shakeViolent {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  @keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateY(20px) scale(0.98); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @keyframes crash {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes spinReverse {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+  }
+  @keyframes zoomIn {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  @keyframes tunnel {
+    0% { transform: scale(1); opacity: 0.1; }
+    50% { opacity: 0.5; }
+    100% { transform: scale(4); opacity: 0; }
+  }
+  @keyframes dataRain {
+    0% { transform: translateY(-100%); opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+  }
+  @keyframes dataRainCard {
+    0% { transform: translateY(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(300px); opacity: 0; }
+  }
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+  }
+  @keyframes floatUp {
+    0% { transform: translateY(110vh) rotateZ(0deg) scale(0.5); opacity: 0; }
+    10% { opacity: 0.8; }
+    90% { opacity: 0.8; }
+    100% { transform: translateY(-10vh) rotateZ(180deg) scale(1.5); opacity: 0; }
+  }
+}

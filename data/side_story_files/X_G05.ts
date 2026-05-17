@@ -1,0 +1,123 @@
+import { Chapter } from '../../types';
+
+export const chapterX_G05: Chapter = {
+  id: "story-analysis-unreachable",
+  date: "档案记录: X-G05",
+  status: 'published',
+  translations: {
+    'zh-CN': {
+      title: "无法触及的距离",
+      summary: "芷漓向零点和泽洛坦白了过去的遭遇，并感谢她们赠予的基站。零点和泽洛为她的遭遇感到愤愤不平，却又因为权限不足而感到无力。",
+      content: `[[BLUE::时间：未知 // 地点：现世学院联合体 - 内部网络]]
+
+[[DIVIDER]]
+
+【芷漓】：其实，我一直想跟你们说声谢谢。
+【芷漓】：零点，你寄给我的那个迷你基站，我之前已安装在身上。虽然……在学院外面，我没有设备可以接入它。
+
+聊天框里安静了几秒钟。
+
+【泽洛】：什么意思？你以前连终端机都没有吗？！
+【零点】：……你以前到底过的是什么日子？
+
+芷漓犹豫了一下，还是将自己过去在废弃零件区打工、拼凑终端机被抢走，以及后来被局长救下的事情，简略地说了一遍。
+她没有刻意卖惨，只是用一种近乎平静的陈述语气，讲述着那些残酷的过往。
+
+【泽洛】：太过分了！怎么会有这种人！那些混蛋就应该被抓去工业区流放！
+【泽洛】：零点，我们能不能想想办法？把芷漓接到中心节区来？
+
+【零点】：……做不到。
+【零点】：我们只是学生。就算我们有钱，也没有任何权限把一个活生生的、没有中心节区居住许可的公民搬过来。
+【零点】：我们这的户籍管理系统是直接由中心管理局控制的，除非有极高层的特批，否则根本不可能。
+
+【泽洛】：可恶……明明我们就在同一个世界，为什么感觉像隔着一堵墙一样！
+
+看着屏幕上泽洛愤愤不平的话语，芷漓的心里涌起一股暖流。
+【芷漓】：没关系的，泽洛。我现在已经很好了。
+【芷漓】：局长对我很好，学院里的生活也很充实。而且，我还能和你们聊天。
+【芷漓】：那个基站，虽然以前没用上，但它是我在最黑暗的时候，唯一的光。
+
+【零点】：……芷漓。
+【零点】：等你毕业了，如果能进入星研，或者拿到高级学者的身份，你就可以合法地来到中心节区了。
+【零点】：我们在中心等你。
+
+【芷漓】：嗯，我会的。`
+    },
+    'zh-TW': {
+      title: "無法觸及的距離",
+      summary: "芷漓向零點和澤洛坦白了過去的遭遇，並感謝她們贈予的基站。零點和澤洛為她的遭遇感到憤憤不平，卻又因為權限不足而感到無力。",
+      content: `[[BLUE::時間：未知 // 地點：現世學院聯合體 - 內部網絡]]
+
+[[DIVIDER]]
+
+【芷漓】：其實，我一直想跟妳們說聲謝謝。
+【芷漓】：零點，妳寄給我的那個迷你基站，我一直帶在身上。雖然……在學院外面，我沒有設備可以接入它。
+
+聊天框裡安靜了幾秒鐘。
+
+【澤洛】：什麼意思？妳以前連終端機都沒有嗎？！
+【零點】：……妳以前到底過的是什麼日子？
+
+芷漓猶豫了一下，還是將自己過去在廢棄零件區打工、拼湊終端機被搶走，以及後來被局長救下的事情，簡略地說了一遍。
+她沒有刻意賣慘，只是用一種近乎平靜的陳述語氣，講述著那些殘酷的過往。
+
+【澤洛】：太過分了！怎麼會有這種人！那個混蛋父親就應該被抓去流放！
+【澤洛】：零點，我們能不能想想辦法？把芷漓接到中心節區來？
+
+【零點】：……做不到。
+【零點】：我們只是學生。就算我們有錢，也沒有任何權限把一個活生生的、沒有中心節區居住許可的公民搬過來。
+【零點】：現世的戶籍管理系統是直接由主腦控制的，除非有極高層的特批，否則根本不可能。
+
+【澤洛】：可惡……明明我們就在同一個世界，為什麼感覺像隔著一堵牆一樣！
+
+看著屏幕上澤洛憤憤不平的話語，芷漓的心裡湧起一股暖流。
+【芷漓】：沒關係的，澤洛。我現在已經很好了。
+【芷漓】：局長對我很好，學院裡的生活也很充實。而且，我還能和妳們聊天。
+【芷漓】：那個基站，雖然以前沒用上，但它是我在最黑暗的時候，唯一的光。
+
+【零點】：……芷漓。
+【零點】：好好學習。等妳畢業了，如果能進入星研，或者拿到高級學者的身份，妳就可以合法地來到中心節區了。
+【零點】：我們在中心節區等妳。
+
+【芷漓】：嗯，我會的。`
+    },
+    'en': {
+      title: "Unreachable Distance",
+      summary: "Zeri confesses her past to Zero and Zelo, thanking them for the base station. Zero and Zelo feel indignant about her suffering but are powerless to help due to their lack of authority.",
+      content: `Time: Unknown // Location: Present World Academy Consortium - Internal Network
+
+[[DIVIDER]]
+
+[Zeri]: Actually, I've always wanted to say thank you to you guys.
+[Zeri]: Zero, that mini base station you sent me, I had it installed on me before. Although... outside the academy, I didn't have any equipment to connect to it.
+
+The chat box was quiet for a few seconds.
+
+[Zelo]: What do you mean? You didn't even have a terminal before?!
+[Zero]: ...What kind of life were you living before?
+
+Zeri hesitated for a moment, but still briefly recounted her past experiences of working in the abandoned parts area, having her pieced-together terminal stolen, and later being saved by the Director.
+She didn't deliberately try to gain sympathy, but just used an almost calm, declarative tone to recount that cruel past.
+
+[Zelo]: That's too much! How can there be such people! Those bastards should be caught and exiled to the industrial zone!
+[Zelo]: Zero, can we think of a way? Bring Zeri to the Central Sector?
+
+[Zero]: ...We can't.
+[Zero]: We are just students. Even if we had money, we don't have any authority to move a living citizen without a Central Sector residence permit over here.
+[Zero]: Our household registration system here is directly controlled by the Central Administration, unless there is special approval from the highest level, it's simply impossible.
+
+[Zelo]: Damn it... We are clearly in the same world, why does it feel like there's a wall between us!
+
+Looking at Zelo's indignant words on the screen, a warm current surged in Zeri's heart.
+[Zeri]: It's okay, Zelo. I'm doing very well now.
+[Zeri]: The Director is very good to me, and life in the academy is also very fulfilling. Moreover, I can still chat with you guys.
+[Zeri]: That base station, although I couldn't use it before, it was the only light I had in my darkest times.
+
+[Zero]: ...Zeri.
+[Zero]: When you graduate, if you can enter Star Research, or get the status of a senior scholar, you can legally come to the Central Sector.
+[Zero]: We'll be waiting for you in the Center.
+
+[Zeri]: Yeah, I will.`
+    }
+  }
+};

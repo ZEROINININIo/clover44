@@ -1,0 +1,147 @@
+import { Chapter } from '../../types';
+
+export const chapterX_G06: Chapter = {
+  id: "story-analysis-dangerous-resolve",
+  date: "档案记录: X-G06",
+  status: 'published',
+  translations: {
+    'zh-CN': {
+      title: "危险的决意",
+      summary: "芷漓向零点和泽洛透露了自己想要去析界边境探查“污染区”的计划，这让两人不由得为她捏了一把汗。",
+      content: `[[BLUE::时间：未知 // 地点：现世学院联合体 - 内部网络]]
+
+[[DIVIDER]]
+
+【芷漓】：零点，泽洛，我有一件事想告诉你们。
+【芷漓】：我打算去析界节区的边境……探查“污染区”。
+
+这条消息发出去后，聊天室里陷入了死一般的寂静。
+足足过了一分钟，屏幕上才爆发出密集的文字。
+
+【泽洛】：你疯了吗？！
+【泽洛】：我听说过，那是连专业的探险队进去都会失联的地方！你去那里干什么？！
+【零点】：芷漓，你冷静一点。
+
+芷漓看着屏幕，手指在屏幕上轻轻敲击。
+【芷漓】：我知道很危险。但是，现有的理论已经无法解释那里的现象了。
+【芷漓】：我想进入星研，我想真正地解决时空泡遗留的问题。只有拿到第一手的数据，我才能证明自己的价值，才能回报局长。
+
+【零点】：回报局长的方式有很多种，没必要搭上自己的命！
+【零点】：你现在才刚刚开始新的生活，为什么要去冒这种险？
+
+【芷漓】：因为……那里有东西在呼唤我。
+【芷漓】：每当我看向那个方向，我的量子眼就能看到一些异常的代码。我有一种直觉，那里隐藏着解开一切谜团的钥匙。
+
+【泽洛】：可是……可是……
+【泽洛】：万一你回不来了怎么办？我们好不容易才重新联系上……
+
+看着泽洛发来的哭泣表情包，芷漓的心中闪过一丝歉意。
+【芷漓】：对不起，让你们担心了。
+【芷漓】：但我已经决定了。我会做好充分的准备，不会盲目送死的。
+
+【零点】：……
+【零点】：既然你已经决定了，我们说什么也没用。
+【零点】：你需要什么技术支持？虽然我们不能过去，但在硬件方面，我或许能帮上一点忙。
+
+【泽洛】：对！我也可以帮忙！虽然我不太懂那些复杂的物理公式，但我可以在其他方面全力支持你！
+
+【芷漓】：谢谢你们。
+【芷漓】：真的，谢谢。
+
+在遥远的中心节区，零点和泽洛看着屏幕，不由得为这个执拗的女孩捏了一把汗。
+她们知道，芷漓即将踏上的，是一条充满未知与死亡的道路。`
+    },
+    'zh-TW': {
+      title: "危險的決意",
+      summary: "芷漓向零點和澤洛透露了自己想要去析界邊境探查「污染區」的計劃，這讓兩人不由得為她捏了一把汗。",
+      content: `[[BLUE::時間：未知 // 地點：現世學院聯合體 - 內部網絡]]
+
+[[DIVIDER]]
+
+【芷漓】：零點，澤洛，我有一件事想告訴妳們。
+【芷漓】：我打算去析界節區的邊境……探查「污染區」。
+
+這條消息發出去後，聊天室裡陷入了死一般的寂靜。
+足足過了一分鐘，屏幕上才爆發出密集的文字。
+
+【澤洛】：妳瘋了嗎？！
+【澤洛】：那裡可是污染區啊！連專業的探險隊進去都會失聯的地方！妳去那裡幹什麼？！
+【零點】：芷漓，妳冷靜一點。妳知道那裡的物理法則有多混亂嗎？那不是靠妳那雙「量子眼」就能解決的問題！
+
+芷漓看著屏幕，手指在鍵盤上輕輕敲擊。
+【芷漓】：我知道很危險。但是，現有的理論已經無法解釋那裡的現象了。
+【芷漓】：我想進入星研，我想真正地解決時空泡遺留的問題。只有拿到第一手的數據，我才能證明自己的價值，才能回報局長。
+
+【零點】：回報局長的方式有很多種，沒必要搭上自己的命！
+【零點】：妳現在才剛剛開始新的生活，為什麼要去冒這種險？
+
+【芷漓】：因為……那裡有東西在呼喚我。
+【芷漓】：每當我看向那個方向，我的量子眼就能看到一些異常的代碼。我有一種直覺，那裡隱藏著解開一切謎團的鑰匙。
+
+【澤洛】：可是……可是……
+【澤洛】：萬一妳回不來了怎麼辦？我們好不容易才重新聯繫上……
+
+看著澤洛發來的哭泣表情，芷漓的心中閃過一絲歉意。
+【芷漓】：對不起，讓妳們擔心了。
+【芷漓】：但我已經決定了。我會做好充分的準備，不會盲目送死的。
+
+【零點】：……
+【零點】：既然妳已經決定了，我們說什麼也沒用。
+【零點】：妳需要什麼技術支持？雖然我們不能過去，但在數據分析和遠程破解方面，我或許能幫上一點忙。
+
+【澤洛】：對！我也可以幫忙！雖然我不太懂那些複雜的物理公式，但我可以幫妳盯著監控！
+
+【芷漓】：謝謝妳們。
+【芷漓】：真的，謝謝。
+
+在遙遠的中心節區，零點和澤洛看著屏幕，不由得為這個執拗的女孩捏了一把汗。
+她們知道，芷漓即將踏上的，是一條充滿未知與死亡的道路。`
+    },
+    'en': {
+      title: "Dangerous Resolve",
+      summary: "Zeri reveals her plan to investigate the 'Pollution Zone' at the Analysis border, leaving Zero and Zelo sweating with worry for her.",
+      content: `Time: Unknown // Location: Present World Academy Consortium - Internal Network
+
+[[DIVIDER]]
+
+[Zeri]: Zero, Zelo, I have something to tell you.
+[Zeri]: I plan to go to the border of the Analysis Sector... to investigate the "Contaminated Zone".
+
+After this message was sent, the chat room fell into a dead silence.
+It took a full minute before dense text erupted on the screen.
+
+[Zelo]: Are you crazy?!
+[Zelo]: I've heard of it, that's a place where even professional expedition teams go missing! What are you going to do there?!
+[Zero]: Zeri, calm down.
+
+Zeri looked at the screen, her fingers tapping lightly on the screen.
+[Zeri]: I know it's dangerous. But, existing theories can no longer explain the phenomena there.
+[Zeri]: I want to enter Star Research, I want to truly solve the problems left by the Space-Time Bubbles. Only by getting first-hand data can I prove my value and repay the Director.
+
+[Zero]: There are many ways to repay the Director, there's no need to risk your own life!
+[Zero]: You've just started your new life, why take this kind of risk?
+
+[Zeri]: Because... there's something calling me there.
+[Zeri]: Whenever I look in that direction, my Quantum Eyes can see some abnormal code. I have an intuition that the key to unlocking all mysteries is hidden there.
+
+[Zelo]: But... but...
+[Zelo]: What if you can't come back? We finally managed to reconnect...
+
+Looking at the crying sticker Zelo sent, a hint of apology flashed in Zeri's heart.
+[Zeri]: I'm sorry to make you worry.
+[Zeri]: But I've already decided. I'll be fully prepared and won't blindly go to my death.
+
+[Zero]: ...
+[Zero]: Since you've already decided, there's no use in us saying anything.
+[Zero]: What technical support do you need? Although we can't go over there, I might be able to help a little with hardware.
+
+[Zelo]: Yes! I can help too! Although I don't really understand those complex physics formulas, I can fully support you in other ways!
+
+[Zeri]: Thank you guys.
+[Zeri]: Really, thank you.
+
+In the distant Central Sector, Zero and Zelo looked at the screen, and couldn't help but sweat for this stubborn girl.
+They knew that the path Zeri was about to embark on was one full of the unknown and death.`
+    }
+  }
+};

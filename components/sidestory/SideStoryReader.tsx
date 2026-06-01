@@ -578,13 +578,22 @@ const SideStoryReader: React.FC<SideStoryReaderProps> = ({ volume, currentIndex,
   };
 
   return (
-    <div className={`flex h-full relative overflow-hidden bg-retro-paper text-ash-light`}>
+    <div className={`flex fixed inset-0 overflow-hidden bg-retro-paper text-ash-light`}>
       {/* Clover Theme Background */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-5 bg-gradient-to-br from-emerald-900 to-emerald-950">
         <div className="absolute top-[-10%] left-[-10%] text-[40vw] text-emerald-400 rotate-12">♣</div>
         <div className="absolute bottom-[-10%] right-[-10%] text-[30vw] text-emerald-500 rotate-[-15deg]">♣</div>
         <div className="absolute top-[30%] right-[20%] text-[10vw] text-emerald-300 rotate-45">♣</div>
       </div>
+      
+      {/* Return Button */}
+      <button 
+          onClick={onBack}
+          className="fixed top-4 left-4 md:top-6 md:left-6 z-50 p-2 md:p-3 bg-emerald-950/80 border border-emerald-800 text-emerald-400 hover:text-emerald-100 hover:border-emerald-500 hover:bg-emerald-900 shadow-[0_0_15px_rgba(4,120,87,0.3)] backdrop-blur transition-all flex items-center justify-center group"
+      >
+          <ChevronLeft size={24} className="group-hover:-translate-x-1 transition-transform" /> 
+      </button>
+
       <main ref={mainRef} className="flex-1 w-full overflow-y-auto scroll-smooth relative z-10 custom-scrollbar pb-24 lg:pb-0">
         <div key={currentChapterIndex} className="max-w-4xl mx-auto min-h-full bg-emerald-950/80 backdrop-blur-sm border-l-0 md:border-l-2 md:border-r-2 border-emerald-900/50 shadow-[0_0_50px_rgba(4,120,87,0.1)] relative animate-slide-in">
           {currentChapter.status === 'locked' ? (

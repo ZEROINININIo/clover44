@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SideStoryVolume, Language } from '../types';
 import { Lock, Unlock } from 'lucide-react';
@@ -7,20 +7,29 @@ interface CloverDirectoryProps {
   volume: SideStoryVolume;
   onSelectChapter: (index: number) => void;
   language: Language;
+  onOpenAbout: () => void;
 }
 
-const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapter, language }) => {
+const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapter, language, onOpenAbout }) => {
   const [isLocked, setIsLocked] = useState(true);
   const [password, setPassword] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
 
   const chapters = volume.chapters;
 
+  useEffect(() => {
+    const isUnlocked = localStorage.getItem('clover_sys_unlocked_44half');
+    if (isUnlocked === 'true') {
+      setIsLocked(false);
+    }
+  }, []);
+
   const handleUnlock = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === '4412233') {
       setIsLocked(false);
       setErrorMsg('');
+      localStorage.setItem('clover_sys_unlocked_44half', 'true');
     } else {
       setErrorMsg(language === 'en' ? 'ACCESS DENIED' : '密码错误');
       setPassword('');
@@ -60,7 +69,7 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
     return leafChapters;
   };
 
-  const leafBaseClasses = "absolute bg-emerald-950/60 border-2 border-emerald-800/50 hover:bg-emerald-900/60 hover:border-emerald-500/80 transition-colors duration-500 shadow-[0_0_30px_rgba(4,120,87,0.3)] flex flex-col items-center justify-center gap-1 md:gap-2 p-2 md:p-4 backdrop-blur-sm z-10 w-[8rem] h-[8rem] md:w-[13rem] md:h-[13rem] overflow-hidden";
+  const leafBaseClasses = "absolute bg-emerald-950/60 border-2 border-emerald-800/50 hover:bg-emerald-900/60 hover:border-emerald-500/80 transition-colors duration-500 shadow-[0_0_30px_rgba(4,120,87,0.3)] flex flex-col items-center justify-center gap-1 md:gap-2 p-1 sm:p-2 md:p-4 backdrop-blur-sm z-10 w-[48%] h-[48%] overflow-hidden";
 
   return (
     <motion.div 
@@ -70,7 +79,7 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
       className="fixed inset-0 bg-ash-black flex flex-col items-center overflow-y-auto no-scrollbar scroll-smooth"
     >
       {/* Immersive Background */}
-      <div className="absolute inset-0 z-0 pointer-events-none opacity-20 bg-gradient-to-br from-emerald-900 via-emerald-950 to-black overflow-hidden h-[150vh]">
+      <div className="fixed inset-0 z-0 pointer-events-none opacity-20 bg-gradient-to-br from-emerald-900 via-emerald-950 to-black overflow-hidden">
           <div className="absolute top-[10%] left-[10%] text-[60vw] text-emerald-500/10 rotate-12 blur-xl font-serif">♣</div>
           <div className="absolute bottom-[20%] right-[10%] text-[40vw] text-emerald-500/10 -rotate-12 blur-lg font-serif">♣</div>
           
@@ -100,7 +109,7 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
           ))}
       </div>
 
-      <div className="relative z-10 w-full max-w-4xl px-4 text-center mt-12 mb-8 md:mb-12 shrink-0">
+      <div className="relative z-10 w-full max-w-4xl px-4 text-center mt-6 md:mt-12 mb-6 md:mb-12 shrink-0">
         <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -159,14 +168,14 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
       </div>
 
       {/* 4-Leaf Clover Layout */}
-      <div className="relative w-[17rem] h-[17rem] md:w-[27rem] md:h-[27rem] shrink-0 mb-32 md:mb-12 mx-auto">
+      <div className="relative w-[85vw] max-w-[18rem] md:max-w-[28rem] aspect-square shrink-0 mb-24 md:mb-12 mx-auto">
         {/* Center Node */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 md:w-10 md:h-10 rounded-full bg-emerald-500 shadow-[0_0_20px_rgba(16,185,129,1)] z-30 flex items-center justify-center">
             <div className="w-2 h-2 md:w-4 md:h-4 bg-emerald-950 rounded-full"></div>
         </div>
 
         {/* Stem */}
-        <div className="absolute top-1/2 left-1/2 w-2 md:w-3 h-32 md:h-48 bg-gradient-to-b from-emerald-600 to-transparent -translate-x-1/2 origin-top rotate-12 z-0 rounded-full"></div>
+        <div className="absolute top-1/2 left-1/2 w-2 md:w-3 h-[50%] md:h-[60%] bg-gradient-to-b from-emerald-600 to-transparent -translate-x-1/2 origin-top rotate-12 z-0 rounded-full"></div>
 
         {/* Top Left Leaf (Index 0, 1) */}
         <motion.div 
@@ -217,6 +226,14 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
         </motion.div>
       </div>
       
+      {/* About 44half Button */}
+      <button 
+          onClick={onOpenAbout}
+          className="md:fixed relative mb-12 md:mb-0 md:top-6 md:right-6 z-50 px-4 py-2 bg-emerald-950/60 border border-emerald-800 text-emerald-400 hover:text-emerald-100 hover:border-emerald-500 shadow-[0_0_15px_rgba(4,120,87,0.2)] backdrop-blur transition-all flex items-center gap-2 group text-xs font-mono tracking-widest uppercase"
+      >
+          <span className="text-emerald-500 group-hover:text-emerald-300">?</span> 关于四四酱
+      </button>
+
     </motion.div>
   );
 };

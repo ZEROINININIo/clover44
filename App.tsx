@@ -6,6 +6,7 @@ import CloverEntryAnimation from './components/CloverEntryAnimation';
 import CloverDirectory from './components/CloverDirectory';
 import BackgroundMusic from './components/BackgroundMusic';
 import SimplifiedSettingsModal from './components/SimplifiedSettingsModal';
+import About44Half from './components/About44Half';
 import { Language, ReadingMode, AppConfig, GraphicsQuality } from './types';
 import { ReaderFont } from './components/fonts/fontConfig';
 import { CONFIG_STORAGE_KEY, DEFAULT_CONFIG } from './config/constants';
@@ -27,7 +28,7 @@ const App: React.FC = () => {
   const initialConfig = loadConfig();
 
   // App State: 'BOOT' -> 'DIRECTORY' -> 'READER'
-  const [appState, setAppState] = useState<'BOOT' | 'DIRECTORY' | 'READER'>('BOOT');
+  const [appState, setAppState] = useState<'BOOT' | 'DIRECTORY' | 'READER' | 'ABOUT'>('BOOT');
   const [currentChapterIndex, setCurrentChapterIndex] = useState(0);
 
   // Global Preference State
@@ -107,9 +108,19 @@ const App: React.FC = () => {
                     setCurrentChapterIndex(index);
                     setAppState('READER');
                 }}
+                onOpenAbout={() => setAppState('ABOUT')}
             />
         )}
         
+        {appState === 'ABOUT' && (
+            <About44Half
+                key="about"
+                onBack={() => setAppState('DIRECTORY')}
+                language={language}
+                isUnlocked={currentChapterIndex > 0} // simple heuristic using currentChapterIndex, or we can just pass true if they've played
+            />
+        )}
+
         {appState === 'READER' && (
           <SideStoryReader
             key="reader"

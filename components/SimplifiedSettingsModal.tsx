@@ -72,13 +72,13 @@ const SimplifiedSettingsModal: React.FC<SettingsModalProps> = (props) => {
                                 <Languages size={16}/> Language
                             </label>
                             <div className="flex gap-2">
-                                {(["zh-CN", "zh-TW", "en"] as Language[]).map(l => (
+                                {(["zh-CN", "zh-TW"] as Language[]).map(l => (
                                     <button 
                                         key={l}
                                         onClick={() => props.setLanguage(l)}
                                         className={`flex-1 py-2 border font-mono text-xs \${props.language === l ? 'bg-emerald-900 border-emerald-500 text-emerald-200' : 'border-emerald-900 text-emerald-700'}`}
                                     >
-                                        {l === 'zh-CN' ? '简体' : l === 'zh-TW' ? '繁体' : 'EN'}
+                                        {l === 'zh-CN' ? '简体中文' : '繁體中文'}
                                     </button>
                                 ))}
                             </div>

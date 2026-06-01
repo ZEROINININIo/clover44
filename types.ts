@@ -1,5 +1,5 @@
 
-export type Language = 'zh-CN' | 'zh-TW' | 'en';
+export type Language = 'zh-CN' | 'zh-TW';
 
 export type TranslationRecord<T> = {
   [key in 'zh-CN' | 'zh-TW']: T;

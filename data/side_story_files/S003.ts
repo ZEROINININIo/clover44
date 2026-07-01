@@ -235,11 +235,6 @@ export const chapterS003: Chapter = {
 天色漸晚，黃昏的餘暉即將燃盡。
 
 [[BLUE::【數據記錄中斷……】]]`
-    },
-    'en': {
-      title: "The Fragmented Rain That Never Ended (Part III) // Entrust",
-      summary: "Guitar notes at dusk masked the truth, while the ticking pocket watch counted down the parting.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

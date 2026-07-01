@@ -197,11 +197,6 @@ export const chapterX011: Chapter = {
 【系統提示：進入深度睡眠模式。修復程序啟動。】
 
 在這個安靜的夜晚，曾經的澤洛希，終於久違地，做了一個沒有數據、只有暖陽的夢。`
-    },
-    'en': {
-      title: "Long-awaited Sleep",
-      summary: "For the current Byaki, she needs to relearn a small thing called 'sleeping'.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

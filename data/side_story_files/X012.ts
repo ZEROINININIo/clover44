@@ -106,11 +106,6 @@ export const chapterX012: Chapter = {
 零點：「……剛才我眼睛上是不是飄過去了一行奇怪的字？」
 
 澤洛：「我假裝沒看見。」`
-    },
-    'en': {
-      title: "Anomalous Potted Plant",
-      summary: "A strange plant appears on Zeri's desk, putting Point and Zelo on high alert.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

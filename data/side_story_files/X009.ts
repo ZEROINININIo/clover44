@@ -183,11 +183,6 @@ export const chapterX009: Chapter = {
 零點默默地坐回椅子上，把臉埋進了臂彎裡。
 
 澤洛：「……那個，Void 前輩說得對。我們好像……確實是笨蛋。」`
-    },
-    'en': {
-      title: "Absolute Seal",
-      summary: "Facing a jar of jam that wouldn't open, the girls with 'Quantum Eye' abilities decided to take a shortcut.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

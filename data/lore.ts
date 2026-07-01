@@ -22,15 +22,6 @@ export const lore: LoreEntry[] = [
           "**空界 (The Void):** 超越現世與主宇的未知空間層級。只有 Void 居於此地，並能與三人保持單線聯繫。它是情報的來源，也是不受監管的盲區。",
           "**衍生層 (Derivative Layer):** 現實與虛無的夾縫。擁有特殊體質（如澤洛希血統）的人可以在此層級干涉物理法則。"
         ]
-      },
-      'en': {
-        title: "World Structure // Multiverse",
-        content: [
-          "**Main Universe:** A stable parallel reality, the target of Nova Labs' exploration. The 'Main Universe Console' (Far Time) is located here.",
-          "**The Current World:** The world where the trio lives. Highly advanced technology, but exists on a 'Broken Boundary' and faces potential annihilation.",
-          "**The Void:** An unknown dimension beyond reality. Only Void resides here, providing intelligence to the trio.",
-          "**Derivative Layer:** The rift between reality and nothingness where physics can be interfered with."
-        ]
       }
     }
   },
@@ -54,15 +45,6 @@ export const lore: LoreEntry[] = [
           "**危機:** 世界隨時可能湮滅。普通大眾對此一無所知，社會秩序雖表面穩定，但底層邏輯已岌岌可危。",
           "**對策:** 必須依靠「時域移轉計畫」來保留文明火種（即新世界移民）。",
           "**責任:** Nova Labs 默默承擔了延續這個家園的責任，這也是科研人員壓力巨大的根源。"
-        ]
-      },
-      'en': {
-        title: "Broken Boundary",
-        content: [
-          "**Definition:** An unstable state of the universe where the Current World is located.",
-          "**Crisis:** The world faces potential annihilation at any moment. The public is unaware.",
-          "**Countermeasure:** The 'Time Domain Transfer Plan' is essential to preserve civilization.",
-          "**Responsibility:** Nova Labs silently bears the burden of extending the life of this home."
         ]
       }
     }
@@ -90,15 +72,6 @@ export const lore: LoreEntry[] = [
           "**使命:** 負責與「主宇」進行現實連通，獲取主宇控制權，為即將毀滅的世界尋找下一個綠洲。",
           "**隱患:** 因權力過大且不受監管，表層人員正在謀劃針對現世領導層的政變。"
         ]
-      },
-      'en': {
-        title: "Nova Labs // U.S.I",
-        content: [
-          "**Surface:** Part of the Technology Research Association, handling public affairs.",
-          "**Core:** Responsible for the 'Time Domain Transfer Plan'. Core members (Zelo, Point, Zeri, Ian) have independent authority.",
-          "**Mission:** Connect with the 'Main Universe' and find a new oasis for the collapsing world.",
-          "**Threat:** Due to unchecked power, surface personnel are plotting a coup."
-        ]
       }
     }
   },
@@ -122,14 +95,6 @@ export const lore: LoreEntry[] = [
           "**設施:** 包含了 Nova Labs 的全部主分設施，也是進入主宇的跳板。",
           "**時空泡:** 進入主宇的必要折躍裝置。停留時間有限，超時會造成「量子反噬」。",
           "**量子反噬:** 「量子生物」（如主角團）因對主宇不熟悉或控制力弱導致的生理排斥（虛弱、生命危險）。"
-        ]
-      },
-      'en': {
-        title: "Time Domain Special Sector",
-        content: [
-          "**Intro:** A dedicated district similar to a transit hub, the main workplace of the trio.",
-          "**Time Bubble:** Essential warp device to enter the Main Universe. Overstaying causes 'Quantum Backlash'.",
-          "**Quantum Backlash:** Physiological rejection (weakness, danger) caused by weak control over the Main Universe."
         ]
       }
     }
@@ -155,15 +120,6 @@ export const lore: LoreEntry[] = [
           "**代價:** 在主宇或實驗宇宙中不會立即死亡，但會受到精神/結構壓力。在現實層（現世），身體仍是普通人，過度使用會受傷或昏迷。",
           "**澤洛希家族:** 世代守護世界真相的家族，成員往往短命或「消失」。格言：「觀測即干涉，遺忘即拯救。」"
         ]
-      },
-      'en': {
-        title: "Quantum Attribute",
-        content: [
-          "**Source:** Provided by the 'Zeloshi' family bloodline.",
-          "**Manifestation:** Quantum Eye (Direct vision of underlying code).",
-          "**Cost:** Physical vulnerability in the Current World. Overuse leads to injury or coma.",
-          "**Zeloshi Family:** Motto: 'Observation is interference, oblivion is salvation.'"
-        ]
       }
     }
   },
@@ -187,14 +143,6 @@ export const lore: LoreEntry[] = [
           "**性質:** 屬於主宇核心部分，具有改變或操控宇宙法則的重要功能。",
           "**現狀:** Nova Labs 正在全力尋找並試圖掌控它，以加速時域計畫。",
           "**名稱來源:** 現世對其的泛稱，寓意「遙遠的時間」或「終極的控制」。"
-        ]
-      },
-      'en': {
-        title: "Far Time",
-        content: [
-          "**True Name:** Main Universe Console.",
-          "**Nature:** Core of the Main Universe, capable of manipulating cosmic laws.",
-          "**Status:** Nova Labs represents the key to the Transfer Plan."
         ]
       }
     }
@@ -220,14 +168,6 @@ export const lore: LoreEntry[] = [
           "**特殊功能:** 極特殊情況下可脫出軌道進行自由行駛（需生物許可）。可使用「特殊專軌」進行優先緊急通行。",
           "**終端設備:** 類似便攜計算機，不需要電力，主要用於澤洛希家族內部通訊。"
         ]
-      },
-      'en': {
-        title: "Shuttle Rail System",
-        content: [
-          "**Overview:** Highly developed transport system driven by spacetime force fields.",
-          "**Feature:** Can derail for free travel in emergencies (requires bio-permit).",
-          "**Terminal:** Portable computer requiring no electricity, used for Zeloshi internal comms."
-        ]
       }
     }
   },
@@ -249,14 +189,6 @@ export const lore: LoreEntry[] = [
           "**概述:** 輔助性機器人，可以進入主宇進行輔助性的行動任務。",
           "**限制:** 能源支持不了太久，主要用於維修、清潔或安保。",
           "**特殊型號:** Xbot-Prime (原型機/幽靈容器)，理論上可以承載人類靈魂數據的完美容器。"
-        ]
-      },
-      'en': {
-        title: "Xbot Series",
-        content: [
-          "**Overview:** Auxiliary robots capable of entering the Main Universe.",
-          "**Limit:** Limited energy duration.",
-          "**Prime:** Prototype capable of housing human soul data."
         ]
       }
     }

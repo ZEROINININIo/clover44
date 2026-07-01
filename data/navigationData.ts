@@ -104,37 +104,6 @@ export const navigationData: TranslationRecord<NavigationTranslation> = {
     readingMode: '閱讀模式',
     modeStd: '文檔模式',
     modeVN: 'AVG模式（技術測試中）'
-  },
-  'en': {
-    home: 'ROOT_MENU',
-    characters: 'PERSONNEL',
-    database: 'DATA_BANK',
-    reader: 'MAIN ARCHIVE',
-    sidestories: 'FRAGMENTS',
-    archives: 'PREQUEL_ARCHIVES',
-    config: 'SYS_CONFIG',
-    mobileHome: 'ROOT',
-    mobileChars: 'TEAM',
-    mobileData: 'DATA',
-    mobileRead: 'MAIN',
-    mobileSide: 'SIDE',
-    mobileArchives: 'PREQ',
-    settingsTitle: 'SYSTEM CONFIGURATION',
-    ost: 'MUSIC ROOM',
-    gallery: 'IMAGE GALLERY',
-    credits: 'CREDITS', 
-    terminal: 'TEMP_TERMINAL',
-    archivesLabel: 'ARCHIVES',
-    cfg: 'CFG',
-    t04Active: 'T-04 // ACTIVE',
-    system: '[SYSTEM]',
-    uiLanguage: '[UI_LANGUAGE]',
-    renderFonts: '[RENDER_FONTS]',
-    displayFx: '[DISPLAY_FX]',
-    apply: 'APPLY',
-    readingMode: 'READING MODE',
-    modeStd: 'STANDARD',
-    modeVN: 'VISUAL NOVEL (BETA)'
   }
 };
 
@@ -154,13 +123,5 @@ export const exitModalData: TranslationRecord<ModalTranslation> = {
         opt2: "2. 我點錯了，謝謝提醒。",
         msg2: "下次注意，我不會責怪您的，感謝您能來看我們的故事。",
         opt3: "(她知道我在這？她不是已經...)"
-    },
-    'en': {
-        speaker: 'Byaki',
-        message: "This action will disconnect from the terminal system and access an external 'website' in your reality. Confirm?",
-        opt1: "1. I confirm.",
-        opt2: "2. Mistake, thanks for the reminder.",
-        msg2: "Be careful next time. I won't blame you. Thank you for coming to see our story.",
-        opt3: "(She knows I'm here? Isn't she already...)"
     }
 };

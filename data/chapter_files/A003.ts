@@ -497,11 +497,6 @@ export const chapterA003: Chapter = {
 [[WHITE::【大家....都在...幹什麼？】]]
 
 [[JUMP::VOL_PB::系統提示：檢測到必要前置支線 [午夜十二時] // 點擊跳轉]]`
-    },
-    'en': {
-      title: "Boundary Training",
-      summary: "To guide that lost signal, she must create the most precise receiver. And the vessel has long been waiting in the dark.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

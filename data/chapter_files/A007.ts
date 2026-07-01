@@ -15,11 +15,6 @@ export const chapterA007: Chapter = {
       title: "???",
       summary: "數據缺失...",
       content: "DATA_PENDING"
-    },
-    'en': {
-      title: "???",
-      summary: "Data missing...",
-      content: "DATA_PENDING"
     }
   }
 };

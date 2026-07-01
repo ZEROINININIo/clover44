@@ -45,11 +45,6 @@ export const chapterSLegacy: Chapter = {
 
                                                              F-6年34月13日                                                                  
                                                                           D.雨`
-    },
-    'en': {
-      title: "legacy",
-      summary: "An unsent letter deep in the data stream. Sender: D.Rain",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

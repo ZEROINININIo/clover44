@@ -50,11 +50,6 @@ export const chapterX001: Chapter = {
 澤洛：「啊！我、我的電腦數據還沒備份！」（緊隨其後）
 
 芷漓：「……有必要嗎。」（淡定地按下按鈕，整個實驗室的燈光隨之一暗）`
-    },
-    'en': {
-      title: "Coffee Machine Modification",
-      summary: "Zeri thought the lab's coffee machine was too inefficient, so she made some 'adjustments'.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

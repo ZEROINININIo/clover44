@@ -45,25 +45,6 @@ export const sideCharacters: SideCharacterData[] = [
           "• 有自己的想法。",
           "• 喜歡逗弄零點。"
         ]
-      },
-      'en': {
-        name: "Dusk Rain",
-        enName: "Dusk .Rain",
-        role: "Collaborator",
-        tags: ["Photophobia", "Overthinker", "Guitarist", "Fanatic"],
-        quote: "This is just a necessary sacrifice... probably?",
-        description: [
-          "**Background:** His parents were researchers but never told him. Before they passed away, Dusk was an extremely ordinary child.",
-          "**Physical Condition:** Suffered psychological trauma after receiving a premonition from 'Void', resulting in photophobia. He needs to apply eye drops regularly and wears a high-tech blackout eye mask (one-way transparent, allowing a clear view from the inside, but appearing as a piece of ordinary black cloth from the outside).",
-          "**Habit:** Regardless of where he goes, he always carries a black guitar bag on his back; his guitar never leaves his side. For him, it is not just an instrument, but a source of security.",
-          "**Personality:**",
-          "• Highly purposeful, even fanatical (regarding specific events).",
-          "• Gentle with others, good at socializing. Reads the atmosphere and cares about others' feelings.",
-          "• Overthinking, leads to internal exhaustion.",
-          "• Loves playing the guitar to relieve stress.",
-          "• Has his own ideas.",
-          "• Likes to tease Point."
-        ]
       }
     }
   },
@@ -105,14 +86,6 @@ export const sideCharacters: SideCharacterData[] = [
           "• 對 **Z.澤洛** 無異常表現。與本世界社交方式無差別。說明祂原所在世界和本世界文化構成高度相似。",
           "• 對 **Z.芷漓** 表現出某種輕微的恐懼，或許是因為芷漓身上有著與她在原世界經歷相似的「特質」。",
         ]
-      },
-      'en': {
-        name: "",
-        enName: "",
-        role: "",
-        tags: [],
-        quote: "",
-        description: []
       }
     }
   },
@@ -141,16 +114,6 @@ export const sideCharacters: SideCharacterData[] = [
         quote: "...",
         description: [
           "待解析"
-        ]
-      },
-      'en': {
-        name: "441/2",
-        enName: "Forty-four and a half",
-        role: "???",
-        tags: ["Unknown"],
-        quote: "...",
-        description: [
-          "To be parsed"
         ]
       }
     }

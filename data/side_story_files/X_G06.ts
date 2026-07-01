@@ -96,52 +96,6 @@ export const chapterX_G06: Chapter = {
 
 在遙遠的中心節區，零點和澤洛看著屏幕，不由得為這個執拗的女孩捏了一把汗。
 她們知道，芷漓即將踏上的，是一條充滿未知與死亡的道路。`
-    },
-    'en': {
-      title: "Dangerous Resolve",
-      summary: "Zeri reveals her plan to investigate the 'Pollution Zone' at the Analysis border, leaving Zero and Zelo sweating with worry for her.",
-      content: `Time: Unknown // Location: Present World Academy Consortium - Internal Network
-
-[[DIVIDER]]
-
-[Zeri]: Zero, Zelo, I have something to tell you.
-[Zeri]: I plan to go to the border of the Analysis Sector... to investigate the "Contaminated Zone".
-
-After this message was sent, the chat room fell into a dead silence.
-It took a full minute before dense text erupted on the screen.
-
-[Zelo]: Are you crazy?!
-[Zelo]: I've heard of it, that's a place where even professional expedition teams go missing! What are you going to do there?!
-[Zero]: Zeri, calm down.
-
-Zeri looked at the screen, her fingers tapping lightly on the screen.
-[Zeri]: I know it's dangerous. But, existing theories can no longer explain the phenomena there.
-[Zeri]: I want to enter Star Research, I want to truly solve the problems left by the Space-Time Bubbles. Only by getting first-hand data can I prove my value and repay the Director.
-
-[Zero]: There are many ways to repay the Director, there's no need to risk your own life!
-[Zero]: You've just started your new life, why take this kind of risk?
-
-[Zeri]: Because... there's something calling me there.
-[Zeri]: Whenever I look in that direction, my Quantum Eyes can see some abnormal code. I have an intuition that the key to unlocking all mysteries is hidden there.
-
-[Zelo]: But... but...
-[Zelo]: What if you can't come back? We finally managed to reconnect...
-
-Looking at the crying sticker Zelo sent, a hint of apology flashed in Zeri's heart.
-[Zeri]: I'm sorry to make you worry.
-[Zeri]: But I've already decided. I'll be fully prepared and won't blindly go to my death.
-
-[Zero]: ...
-[Zero]: Since you've already decided, there's no use in us saying anything.
-[Zero]: What technical support do you need? Although we can't go over there, I might be able to help a little with hardware.
-
-[Zelo]: Yes! I can help too! Although I don't really understand those complex physics formulas, I can fully support you in other ways!
-
-[Zeri]: Thank you guys.
-[Zeri]: Really, thank you.
-
-In the distant Central Sector, Zero and Zelo looked at the screen, and couldn't help but sweat for this stubborn girl.
-They knew that the path Zeri was about to embark on was one full of the unknown and death.`
     }
   }
 };

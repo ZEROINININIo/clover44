@@ -74,41 +74,6 @@ export const chapterX_G04: Chapter = {
 
 在這個虛擬的聊天室裡，三個來自不同節區、身份懸殊的女孩，再次建立起了那條跨越物理距離的紐帶。
 對於芷漓來說，這是她在這個世界上，除了局長之外，僅有的溫暖。`
-    },
-    'en': {
-      title: "Reunion and New Name",
-      summary: "With a new identity, Zeri reconnects with Zero and Zelo on the academy network. She tells them her new name is 'Zeri', and everything about her past has been classified by the Director for her protection.",
-      content: `Time: Unknown // Location: Present World Academy Consortium - Internal Network
-
-[[DIVIDER]]
-
-[Zero]: ...So, you're safe now?
-[Zelo]: Thank goodness! You were out of touch for so long, we thought you...
-
-Looking at the text jumping on the screen, the corners of Zeri's mouth turned up slightly.
-Under the Director's arrangement, she not only received medical treatment but also got the opportunity to study at the Present World Academy Consortium. More importantly, she had her own terminal that could legally connect to the Central Internet.
-
-[Zeri]: Yes, I'm very safe now. And, I have a new name.
-[Zeri]: My name now is "Zeri".
-
-[Zelo]: Zeri? Sounds nice! What was your name before?
-[Zero]: Zelo, don't ask. Since she changed her name, it means it's inconvenient to reveal things from the past.
-
-Zero was as sharp as ever.
-In fact, to protect her, the Director had completely destroyed or encrypted all her past records in the Analysis Sector. The current "Zeri" was a specially enrolled student with a clean background, sponsored by the Time Domain Administration.
-As for her previous name, even she herself was unwilling to recall it. It represented a memory full of cold and despair.
-
-[Zeri]: It's okay, Zero. Actually, there's nothing to hide, it's just that the Director kept my past information confidential for my safety.
-[Zeri]: It's so good to be able to contact you guys again.
-
-[Zelo]: Woohoo, Zeri, you don't know how worried we were about you!
-[Zero]: Since everything is fine now, let's look forward. What's your major at the academy?
-
-[Zeri]: Comprehensive World Studies.
-[Zero]: ...That's one of the hardest majors. However, because it's you, it shouldn't be a problem, right.
-
-In this virtual chat room, three girls from different sectors and with vastly different statuses once again established that bond that crossed physical distances.
-For Zeri, this was the only warmth she had in this world, aside from the Director.`
     }
   }
 };

@@ -80,44 +80,6 @@ export const chapterX_G05: Chapter = {
 【零點】：我們在中心節區等妳。
 
 【芷漓】：嗯，我會的。`
-    },
-    'en': {
-      title: "Unreachable Distance",
-      summary: "Zeri confesses her past to Zero and Zelo, thanking them for the base station. Zero and Zelo feel indignant about her suffering but are powerless to help due to their lack of authority.",
-      content: `Time: Unknown // Location: Present World Academy Consortium - Internal Network
-
-[[DIVIDER]]
-
-[Zeri]: Actually, I've always wanted to say thank you to you guys.
-[Zeri]: Zero, that mini base station you sent me, I had it installed on me before. Although... outside the academy, I didn't have any equipment to connect to it.
-
-The chat box was quiet for a few seconds.
-
-[Zelo]: What do you mean? You didn't even have a terminal before?!
-[Zero]: ...What kind of life were you living before?
-
-Zeri hesitated for a moment, but still briefly recounted her past experiences of working in the abandoned parts area, having her pieced-together terminal stolen, and later being saved by the Director.
-She didn't deliberately try to gain sympathy, but just used an almost calm, declarative tone to recount that cruel past.
-
-[Zelo]: That's too much! How can there be such people! Those bastards should be caught and exiled to the industrial zone!
-[Zelo]: Zero, can we think of a way? Bring Zeri to the Central Sector?
-
-[Zero]: ...We can't.
-[Zero]: We are just students. Even if we had money, we don't have any authority to move a living citizen without a Central Sector residence permit over here.
-[Zero]: Our household registration system here is directly controlled by the Central Administration, unless there is special approval from the highest level, it's simply impossible.
-
-[Zelo]: Damn it... We are clearly in the same world, why does it feel like there's a wall between us!
-
-Looking at Zelo's indignant words on the screen, a warm current surged in Zeri's heart.
-[Zeri]: It's okay, Zelo. I'm doing very well now.
-[Zeri]: The Director is very good to me, and life in the academy is also very fulfilling. Moreover, I can still chat with you guys.
-[Zeri]: That base station, although I couldn't use it before, it was the only light I had in my darkest times.
-
-[Zero]: ...Zeri.
-[Zero]: When you graduate, if you can enter Star Research, or get the status of a senior scholar, you can legally come to the Central Sector.
-[Zero]: We'll be waiting for you in the Center.
-
-[Zeri]: Yeah, I will.`
     }
   }
 };

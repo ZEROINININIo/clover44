@@ -162,11 +162,6 @@ export const chapterX_G03: Chapter = {
 總有一天。
 她在心裡默默地對自己說。
 總有一天，我會徹底離開這裡。`
-    },
-    'en': {
-      title: "Scrap Terminal",
-      summary: "In the dark corners of the Analysis Sector, Zhili pieced together her first terminal from discarded parts, but this tiny glimmer of hope was quickly snuffed out by reality.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

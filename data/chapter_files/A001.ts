@@ -147,11 +147,6 @@ export const chapterA001: Chapter = {
 
 晚上澤洛回到研究所後，看著零點那個生不如死的模樣，還以為零點玩了一天，
 累得不行了。`
-    },
-    'en': {
-      title: "Overtime is Bad Civilization",
-      summary: "In a rare moment of time off, Point wanted to find someone to hang out with, but stumbled into Zeri's 'trap'.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

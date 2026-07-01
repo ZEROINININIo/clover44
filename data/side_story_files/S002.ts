@@ -167,11 +167,6 @@ export const chapterS002: Chapter = {
 還沒等暮雨拒絕，零點就拉著他在複雜的迴廊間奔跑起來。
 
 [[IMAGE::https://cdn.imgos.cn/vip/2026/01/02/6957e8e22304e.png::PHOTO_ARCHIVE_M001]]`
-    },
-    'en': {
-      title: "The Fragmented Rain That Never Ended (Part II) // Reveal",
-      summary: "Heavy blast doors blocked the path, and also locked away the secrets of the 'Experiment'.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

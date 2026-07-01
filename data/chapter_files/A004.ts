@@ -273,11 +273,6 @@ export const chapterA004: Chapter = {
 
 零點猶豫了一下，最終還是沒有按下提交鍵，而是選擇了「保存草稿」。
 「再等等……至少，等老師適應了這個身體。」`
-    },
-    'en': {
-      title: "Cost // The Silent Administrator",
-      summary: "The god is dead, and only a lost soul has returned. But someone always has to pay the bill for a miracle.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

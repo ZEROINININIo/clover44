@@ -131,11 +131,6 @@ export const chapterX006: Chapter = {
 她笑了笑，默默拿起了旁邊的勺子——尊嚴固然重要，但再不吃就涼了。
 
 白栖：「（舀起）……行吧。」`
-    },
-    'en': {
-      title: "Re-adaptation Protocol",
-      summary: "From 'Omniscient' back to 'Mortal', the first thing Byaki needs to adapt to is... using chopsticks?",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

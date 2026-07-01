@@ -210,11 +210,6 @@ export const chapterG006: Chapter = {
 她緊緊抓著手裡的那個『零件』，裝作只是一個在廢墟裡拾荒的普通女孩。
 
 那是她們初見的一天。`
-    },
-    'en': {
-      title: "The Gift",
-      summary: "Carrying Puyou's 'task' and 'gift', Zhi Li returns to reality. However, when she excavates the specified ruins, she discovers a taboo item that absolutely shouldn't exist in this world.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

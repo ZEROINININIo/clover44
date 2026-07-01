@@ -123,11 +123,6 @@ Xbot-Mini：「建議：清除源頭，以確保持續的潔淨。」
 0000.2Void>>……真是一場精彩的鬧劇。不過，我倒是挺贊同那個小傢伙的判斷的。零點確實是這個實驗室最大的『混亂熵增源』。如果不介意，我可以幫你們把那個機器人扔到恆星軌道上去——連同零點的漫畫書一起。【插入結束】
 
 零點：「漫畫書就不用了！！！」`
-    },
-    'en': {
-      title: "Absolute Cleanliness Directive",
-      summary: "To deal with the dust in the lab, Zeri upgraded the cleaning robot's AI. The effect seems... a bit too good?",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

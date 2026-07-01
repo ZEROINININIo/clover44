@@ -78,11 +78,6 @@ export const chapterX002: Chapter = {
 零點：「把我的布丁還給我啊啊啊啊！那是限量版的！Void 妳個貪吃鬼！！」
 
 澤洛：「（小聲）某種意義上，這確實是『高維』快遞呢……」`
-    },
-    'en': {
-      title: "High-Dimensional Delivery",
-      summary: "Point attempts to prove that 'Spatial Folding' can be used for food delivery, but the delivery address seems to have been set to a strange location.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

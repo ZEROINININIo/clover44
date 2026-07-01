@@ -146,55 +146,6 @@ export const chapterG002: Chapter = {
 
 「等著我。」她對著那片黑暗輕聲說道，彷彿是在許下一個莊嚴的誓言。
 `
-    },
-    'en': {
-      title: "Further Studies and Sprouting Ideas",
-      summary: "Years later, Zhi Li grows up safely under the Director's protection and continues her studies in World Comprehensive Studies. To repay his kindness, she aims to join Nova Lab. Meanwhile, the idea of investigating the 'Pollution Zone' at the border of the Analysis Sector quietly takes root in her mind.",
-      content: `
-[[BLUE::Scene: Time Line Administration - Internal Academy // Several Years Later ]]
-
-Time has a unique scale in this world.
-A single year here consists of a full forty-two months. The passage of several years was enough to transform a frail girl who once struggled to survive in a pile of discarded parts into a focused and calm scholar.
-
-Under the Director's careful care, Zhi Li not only grew up safely but also gained the precious opportunity to further her studies in "World Comprehensive Studies". To her, the Director was not just a benefactor who pulled her out of the abyss, but more like a strict yet warm father. All her living expenses, expensive tuition fees, and even the personal equipment used for precise calculations were entirely borne by the Director.
-
-Zhi Li always kept this heavy gratitude in her heart.
-
-[[DIVIDER]]
-
-The academic grading system in this worldview is strict and cruel, divided into levels one to eight.
-Levels one to three are primary, three to five are intermediate, five to seven are advanced, and the legendary level eight is the leader level. The levels are not simple integer leaps but are precise to two decimal places.
-
-Before level three, the examination logic is no different from normal exams in the real world, relying on the accumulation of knowledge and the breadth of memory. However, once crossing the threshold of level three and entering the intermediate field, the rules change drastically—every 0.01 level increase requires passing an extremely rigorous special test or submitting a research result of breakthrough value.
-
-Zhi Li's current progress is steadily advancing towards the advanced zone. Her extraordinary "Quantum Eye Terminal" vision made even the most obscure data streams as clear as the lines on her palm.
-
-"As long as I can publish that research result on the stability of spatial folding..." Zhi Li typed rapidly in front of the virtual screen, her eyes flashing with the light of rationality. "Once I successfully enter the advanced zone, I can apply for a position at Time Line Nova Lab."
-
-Nova Lab is the highest research institution that all scholars dream of. Zhi Li's idea was simple and pure: only by standing at that height could she truly repay the Director and the sector that accepted her.
-
-[[DIVIDER]]
-
-[[BLUE::Scene: Time Line Administration - Staff Dormitory ]]
-
-In the dead of night, the administration's dormitory area was left with only the low-frequency hum of the life support systems.
-
-Zhi Li closed her terminal and rubbed her aching brow. Although her body still lacked that vibrant sense of health, at least she no longer felt like she could collapse at any moment like in the past.
-
-She walked to the window, her gaze passing over the bright lights of the Central Sector, casting towards the distant, darkness-shrouded horizon.
-
-That was the border of the Analysis Sector.
-
-For some reason, a bold, even crazy idea suddenly sprouted in her mind: she wanted to investigate the place known as the "Pollution Zone".
-
-That area was a place no one normally dared to approach. It was the direct evidence of the irreversible impact on the world after the "Space-Time Bubble" event. Twisted physical laws, violent energy turbulence, and anomalies that could not be explained by existing science made it an absolute forbidden zone.
-
-This was also the fundamental reason why the Analysis Sector was ultimately completely sealed off.
-
-"If... if I can analyze the data there..." Zhi Li muttered to herself, the Quantum Eye Terminal projecting a faint green light on her retina. "Perhaps, I can find a way to completely solve the legacy problems of the Space-Time Bubble. This is more valuable than any conventional research result."
-
-Once this idea was born, it grew wildly like weeds and could no longer be contained. The ghost from the Analysis Sector was ultimately going to return to the land that birthed countless mysteries.
-`
     }
   }
 };

@@ -513,11 +513,6 @@ export const chapterA006: Chapter = {
 以及……一個在那几年裡，在這個世界的背面，她用鮮血換來的「秘密」。
 
 那是一個，連零點都不能告訴的秘密。`
-    },
-    'en': {
-      title: "Red Tea's Den // Reunion",
-      summary: "Former companions stand on opposite sides. One is a traitor who cannot reach the 'truth', the other is a 'ghost' attempting to end it all with death.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

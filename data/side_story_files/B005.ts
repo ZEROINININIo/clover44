@@ -154,11 +154,6 @@ export const chapterB005: Chapter = {
 「暫時先放著吧。希望有一天……能好好研究一下裡面的東西。」
 
 她看著保險櫃合上的門，那種奇妙的悸動漸漸平息。直覺告訴她，這個小小的金屬塊，在未來的某一天，一定會派上用場。`
-    },
-    'en': {
-      title: "Antique",
-      summary: "While wandering in the Central Sector, Bai Qi was attracted by an old-era storage medium sold by a mobile vendor. A peculiar intuition prompted her to buy this ostensibly useless item.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

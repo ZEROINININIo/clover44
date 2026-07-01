@@ -107,11 +107,6 @@ export const chapterX003: Chapter = {
 0000.2Void>>……我剛剛修改了你們的體重秤數據。祝用餐愉快。
 
 零點：「啊啊啊！我的牛肉！都不許搶，我要化悲憤為食量！」`
-    },
-    'en': {
-      title: "Top Secret Hotpot Protocol",
-      summary: "Lab Rule #1: No eating near the consoles. Unless... the ingredients are too tempting.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

@@ -159,11 +159,6 @@ export const chapterX010: Chapter = {
 雖然身為一個極為特殊的存在，但貨幣這種東西對她來說也不是一個可以隨意操縱的代碼。
 
 白栖：「……我下個月的經費，可能要赤字了。」`
-    },
-    'en': {
-      title: "Computational Deficit",
-      summary: "The former high-dimensional observer faces her biggest crisis since arriving in reality—route planning on a supermarket discount day.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

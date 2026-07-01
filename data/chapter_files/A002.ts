@@ -393,11 +393,6 @@ Void>>：「小事一件，你們叫那東西是【遠時】？好俗的名字�
 零點：「我要珍藏一輩子！今天妳必須穿一天，然後當我的女僕！」
 
 [[DANGER::芷漓：「（想殺了她，不行，願賭服輸....）」]]`
-    },
-    'en': {
-      title: "Bet Accepted!",
-      summary: "Since Point was 'tricked into overtime' by Zeri last time, she hasn't been able to let go of her frustration. So, she found an opportunity to propose a bet about finding 'Far Time'...",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

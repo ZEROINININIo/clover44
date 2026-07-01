@@ -100,11 +100,6 @@ export const chapterX_G02: Chapter = {
 雨還在下，貧民區的夜晚冷得刺骨。她沒有終端機，沒有信號，也沒有希望。
 
 只有後頸那塊微小的凸起，在冰冷的雨夜裡，散發著一絲幾乎不存在的溫度。`
-    },
-    'en': {
-      title: "Silent Base Station",
-      summary: "Her family's property confiscated due to debt, Zhili is forced to move to a slum near the polluted border. Having lost everything, all she has left is the implanted base station in her body, which can no longer reach the Central Sector.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

@@ -69,9 +69,7 @@ export const chapterA006: Chapter = {
 支持换行。
 支持特殊标签。\`,
     },
-    'zh-TW': { ... },
-    'en': { ... }
-  }
+    'zh-TW': { ... }
 };
 </pre>
     </li>

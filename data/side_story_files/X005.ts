@@ -99,11 +99,6 @@ export const chapterX005: Chapter = {
 零點：「（對著天空大喊）Void 妳閉嘴！別以為我不知道妳在偷聽！」
 
 （兩人的笑聲消散在高空的風中，隨後是傳送梯啟動的嗡鳴聲）`
-    },
-    'en': {
-      title: "Lighthouse at the Boundary",
-      summary: "Routine maintenance atop the high tower. Overlooking the city, they understood the meaning of guardianship.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

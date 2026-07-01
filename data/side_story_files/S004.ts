@@ -311,11 +311,6 @@ Void 沉默了片刻，那雙眼睛裡流露出一絲悲憫。
 [[DANGER::【檢測到生命體徵消失……】]]
 [[DANGER::【暮雨 ID 下線】]]
 [[BLUE::【真相已歸檔。】]]`
-    },
-    'en': {
-      title: "The Fragmented Rain That Never Ended (Part IV) // Truth",
-      summary: "Since the ending cannot be changed, knowing the truth is my final obsession.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

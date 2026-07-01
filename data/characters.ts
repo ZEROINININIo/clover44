@@ -38,18 +38,6 @@ export let characters: Character[] = [
           "**能力:** 對公行動較保守，但對重要任務有自己的盤算，且擁有三人中最強的隱形實力。",
           "**弱點:** 容易吃苦頭，但恢復得也快。"
         ]
-      },
-      'en': {
-        name: "Point",
-        role: "Core/Frontline",
-        tags: ["Backbone", "Independent", "Hidden Strength"],
-        quote: "Catch me if you can!",
-        description: [
-          "**Personality:** The backbone of the team. Lively, outgoing, and highly independent. Often has mischievous ideas.",
-          "**Relations:** Childhood friend of Zeri and Zelo. Favored by Void.",
-          "**Ability:** Conservative in public but has the strongest hidden strength among the three.",
-          "**Weakness:** Prone to trouble but recovers quickly."
-        ]
       }
     }
   },
@@ -91,19 +79,6 @@ export let characters: Character[] = [
           "**反差:** 表面淡定，實際上偶爾會耍小心機（例如誘騙零點加班）。",
           "**情感:** 嘴硬心軟，非常關心隊友，尤其是零點。低調害羞，不喜歡別人叫她「小名」，也不喜歡穿可愛的衣服。"
         ]
-      },
-      'en': {
-        name: "Zeri",
-        role: "Research",
-        tags: ["Mysophobia", "Rational", "Tsundere"],
-        quote: "Data doesn't lie.",
-        description: [
-          "**Personality:** Quiet, steady, rational. Has mild mysophobia and a disciplined life.",
-          "**Appearance:** Excellent vision, never wears glasses. Keeps a tidy appearance despite the lab coat.",
-          "**Work:** Extremely serious, always focused on research.",
-          "**Contrast:** Appears calm but plays tricks (like making Point work overtime).",
-          "**Emotion:** Sharp-tongued but soft-hearted. Cares deeply for the team, especially Point."
-        ]
       }
     }
   },
@@ -143,18 +118,6 @@ export let characters: Character[] = [
           "**關係:** 對零點和芷漓都很了解，是親人般的存在。",
           "**原則:** 有自己的需求時並不強迫他人幫助。"
         ]
-      },
-      'en': {
-        name: "Zelo",
-        role: "Support/Assistant",
-        tags: ["Genki", "Playful", "Girlish"],
-        quote: "I'll support you!",
-        description: [
-          "**Personality:** Outgoing, lively, full of hope. Very cute and girlish.",
-          "**Work:** Playful like a child, often acts as an experimental assistant.",
-          "**Relations:** Understands Point and Zeri well, treated as family.",
-          "**Principle:** Doesn't force others to help with her own needs."
-        ]
       }
     }
   },
@@ -192,18 +155,6 @@ export let characters: Character[] = [
           "**能力:** 擁有無限的生命和特殊的記憶系統。實力非常強，能輕鬆完成現實上難以做到的事情。",
           "**性格:** 看似散漫，但在關鍵節點非常可靠。",
           "**關係:** 對零點比較寵，會幫忙但也警告零點不要經常召喚它（因為會損害零點的身體）。"
-        ]
-      },
-      'en': {
-        name: "Void",
-        role: "Advisor/Void",
-        tags: ["High-Dim", "Infinite", "???"],
-        quote: "Interference.",
-        description: [
-          "**Identity:** A higher-dimensional being from 'The Void'.",
-          "**Ability:** Infinite life, special memory system. Extremely powerful.",
-          "**Personality:** Laid-back but reliable.",
-          "**Relation:** Protective of Point, but warns against frequent summoning."
         ]
       }
     }
@@ -243,18 +194,6 @@ export let characters: Character[] = [
           "**性格:** 溫柔、堅定，帶有濃厚的學者氣質。對待零點等人如同長輩或老師。雖然現在需要重新適應物理世界（比如拿筷子）。",
           "**能力:** 擁有極高的計算能力和量子適應性，配合 Xbot 的機能，戰鬥力極強，但受限於能源（數據壽命）。"
         ]
-      },
-      'en': {
-        name: "Byaki",
-        role: "Core/Vessel",
-        tags: ["Zeloshi", "Ghost Vessel", "Variable"],
-        quote: "This body... is a bit heavy.",
-        description: [
-          "**Identity:** Former Zeloshi member, precursor to Void. Consciousness currently mounted in a specialized Xbot chassis.",
-          "**Status:** Possesses a physical form but burns 'past' data to sustain 'present' activity. A burning candle.",
-          "**Personality:** Gentle, firm, scholarly. Acts as a mentor to Point and others. Currently re-adapting to the physical world.",
-          "**Ability:** High computational power and quantum adaptability. High combat capability via Xbot, limited by energy (data lifespan)."
-        ]
       }
     }
   },
@@ -293,18 +232,6 @@ export let characters: Character[] = [
           "**能力:** 未知。",
           "**性格:** 不可捉摸。",
           "**关系:** after零点非常喜欢它，before时间线上芷漓重新激活了普忧原型机“普忧lite”。"
-        ]
-      },
-      'en': {
-        name: "PYO",
-        role: "Astrolabe Library Curator",
-        tags: ["Elusive", "Future Interference", "Prototype"],
-        quote: "...",
-        description: [
-          "**Identity:** Originally a character from the 'after' future timeline, but somehow interfered with this timeline.",
-          "**Ability:** Unknown.",
-          "**Personality:** Elusive and unpredictable.",
-          "**Relations:** 'After' Point likes it very much. In the 'before' timeline, Zeri reactivated its prototype 'PYO lite'."
         ]
       }
     }

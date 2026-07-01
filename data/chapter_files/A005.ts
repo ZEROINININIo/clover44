@@ -469,11 +469,6 @@ export const chapterA005: Chapter = {
 
 零點轉身衝向傳送門，眼眶瞬間紅了。
 「等我！一定要等我！！」`
-    },
-    'en': {
-      title: "All In // The Final Remittance",
-      summary: "She emptied her account and armed herself. For that new world without currency, she decided to solve the final trouble alone.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

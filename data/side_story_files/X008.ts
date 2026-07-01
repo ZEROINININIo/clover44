@@ -189,11 +189,6 @@ Nova Labs 內部氣溫：16.0°C。
 澤洛：「（從毯子裡探出頭）哇！不冷了！終於活過來了！Void 前輩萬歲！」
 
 最終，在那天剩餘的時間裡，實驗室維持在了一個極為舒適的恆溫狀態。`
-    },
-    'en': {
-      title: "Absolute Temperature Control Field",
-      summary: "In the dead of winter, a war between 16°C and 26°C broke out in the laboratory.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

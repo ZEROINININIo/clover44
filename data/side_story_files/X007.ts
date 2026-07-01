@@ -259,11 +259,6 @@ export const chapterX007: Chapter = {
 【重新連接】
 
 經過白栖神秘的調整後，她的賬號又恢復了原樣，不過ID已經換成了「Byaki...」`
-    },
-    'en': {
-      title: "Dimensional Strike",
-      summary: "When an omniscient consciousness connects to a virtual network, it's no longer a game, but a harvest of the underlying code.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

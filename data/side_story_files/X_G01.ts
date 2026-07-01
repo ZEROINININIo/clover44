@@ -130,11 +130,6 @@ export const chapterX_G01: Chapter = {
 
 她小心翼翼地將基站藏進背包的最深處。
 雖然她依然無法離開析界節區，但至少現在，她有一條通往外面世界的、屬於自己的隱秘通道。`
-    },
-    'en': {
-      title: "Cross-Sector Signal",
-      summary: "During her time at the Analysis Junior Academy, Zhili met Zero and Zelo through an unexpected help post, and received a special gift from across the sectors.",
-      content: "English translation is currently unavailable for this chapter."
     }
   }
 };

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { SideStoryVolume, Language } from '../types';
 import { Lock, Unlock } from 'lucide-react';
 
@@ -11,33 +11,10 @@ interface CloverDirectoryProps {
 }
 
 const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapter, language, onOpenAbout }) => {
-  const [isLocked, setIsLocked] = useState(true);
-  const [password, setPassword] = useState('');
-  const [errorMsg, setErrorMsg] = useState('');
-
   const chapters = volume.chapters;
 
-  useEffect(() => {
-    const isUnlocked = localStorage.getItem('clover_sys_unlocked_44half');
-    if (isUnlocked === 'true') {
-      setIsLocked(false);
-    }
-  }, []);
-
-  const handleUnlock = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (password === '4412233') {
-      setIsLocked(false);
-      setErrorMsg('');
-      localStorage.setItem('clover_sys_unlocked_44half', 'true');
-    } else {
-      setErrorMsg(language === 'en' ? 'ACCESS DENIED' : '密码错误');
-      setPassword('');
-    }
-  };
-
   const handleChapterClick = (index: number) => {
-    if (!isLocked) {
+    if (chapters[index].status !== 'locked') {
       onSelectChapter(index);
     }
   };
@@ -51,18 +28,19 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
   const renderLeafChapters = (startIdx: number, endIdx: number) => {
     const leafChapters = [];
     for (let i = startIdx; i <= endIdx && i < chapters.length; i++) {
+        const isChapterLocked = chapters[i].status === 'locked';
         leafChapters.push(
             <button
                 key={i}
                 onClick={() => handleChapterClick(i)}
-                disabled={isLocked}
+                disabled={isChapterLocked}
                 className={`w-full px-1 py-1 md:px-2 md:py-2 text-[10px] md:text-xs font-bold border truncate transition-all duration-300 relative z-20 ${
-                    isLocked 
+                    isChapterLocked 
                         ? 'bg-emerald-950/30 border-emerald-900/50 text-emerald-800 cursor-not-allowed' 
                         : 'bg-emerald-900/80 border-emerald-600/50 text-emerald-200 hover:bg-emerald-700 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-[0_0_10px_rgba(16,185,129,0.2)]'
                 }`}
             >
-                {isLocked ? <span className="flex items-center justify-center gap-1"><Lock size={10} /> {language === 'en' ? 'LOCKED' : '锁定'}</span> : getChapterTitle(i)}
+                {isChapterLocked ? <span className="flex items-center justify-center gap-1"><Lock size={10} /> {language === 'en' ? 'LOCKED' : '锁定'}</span> : getChapterTitle(i)}
             </button>
         );
     }
@@ -83,30 +61,29 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
           <div className="absolute top-[10%] left-[10%] text-[60vw] text-emerald-500/10 rotate-12 blur-xl font-serif">♣</div>
           <div className="absolute bottom-[20%] right-[10%] text-[40vw] text-emerald-500/10 -rotate-12 blur-lg font-serif">♣</div>
           
-          {/* Animated particles */}
-          {Array.from({ length: 20 }).map((_, i) => (
-             <motion.div 
-               key={i}
-               className="absolute text-emerald-500/20"
-               initial={{ 
-                 top: `${Math.random() * 100}%`, 
-                 left: `${Math.random() * 100}%`,
-                 scale: Math.random() * 0.5 + 0.5,
-                 rotate: 0
-               }}
-               animate={{ 
-                 top: [`${Math.random() * 100}%`, `${Math.random() * 100}%`],
-                 rotate: 360
-               }}
-               transition={{ 
-                 duration: Math.random() * 20 + 20, 
-                 repeat: Infinity,
-                 ease: "linear"
-               }}
-             >
-               ♣
-             </motion.div>
-          ))}
+          {/* Animated Star Tracks (星轨流转) */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vw] h-[150vw] md:w-[100vw] md:h-[100vw] flex items-center justify-center opacity-50">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <motion.div
+                key={`track-${i}`}
+                className="absolute rounded-full"
+                style={{
+                  width: `${(i + 2) * 12}%`,
+                  height: `${(i + 2) * 12}%`,
+                  border: `1px ${i % 2 === 0 ? 'dashed' : 'solid'} rgba(255, 255, 255, ${0.15 + (i * 0.05)})`,
+                  boxShadow: i % 3 === 0 ? '0 0 15px rgba(255, 255, 255, 0.2)' : 'none',
+                }}
+                animate={{
+                  rotate: i % 2 === 0 ? [0, 360] : [360, 0],
+                }}
+                transition={{
+                  duration: 40 + i * 15,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+              />
+            ))}
+          </div>
       </div>
 
       <div className="relative z-10 w-full max-w-4xl px-4 text-center mt-6 md:mt-12 mb-6 md:mb-12 shrink-0">
@@ -121,50 +98,18 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
             <p className="text-emerald-500 font-mono tracking-widest text-sm mb-6">FORTY-FOUR AND A HALF</p>
         </motion.div>
         
-        <AnimatePresence mode="wait">
-            {isLocked ? (
-                <motion.form 
-                    key="lock-form"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.9, filter: 'blur(5px)' }}
-                    transition={{ duration: 0.5 }}
-                    onSubmit={handleUnlock} 
-                    className="flex flex-col items-center gap-4 bg-emerald-950/80 p-6 rounded-xl border border-emerald-800/50 backdrop-blur-md max-w-sm mx-auto shadow-[0_0_50px_rgba(4,120,87,0.2)]"
-                >
-                    <p className="text-emerald-400 font-mono text-xs tracking-widest uppercase flex items-center gap-2">
-                        <Lock size={14} /> SYSTEM LOCKED
-                    </p>
-                    <div className="flex w-full gap-2 relative">
-                        <input 
-                            type="password" 
-                            value={password}
-                            onChange={e => setPassword(e.target.value)}
-                            className="flex-1 w-full bg-black/50 border border-emerald-800 text-emerald-200 px-4 py-2 font-mono outline-none focus:border-emerald-400 focus:shadow-[0_0_15px_rgba(52,211,153,0.3)] text-center tracking-[0.5em] transition-all"
-                            placeholder="***"
-                            autoFocus
-                        />
-                        <button type="submit" className="bg-emerald-800 text-emerald-100 px-4 py-2 border border-emerald-600 hover:bg-emerald-600 font-bold transition-colors shadow-[0_0_10px_rgba(4,120,87,0.5)]">
-                            UNLOCK
-                        </button>
-                    </div>
-                    {errorMsg && <p className="text-red-400 font-mono text-xs animate-shake-violent">{errorMsg}</p>}
-                </motion.form>
-            ) : (
-                <motion.div 
-                    key="unlocked-msg"
-                    initial={{ opacity: 0, scale: 0.9, filter: 'blur(5px)' }}
-                    animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
-                    transition={{ duration: 0.5 }}
-                    className="flex flex-col items-center gap-2 p-6"
-                >
-                    <p className="text-emerald-300 font-mono text-sm tracking-widest uppercase flex items-center gap-2 drop-shadow-[0_0_5px_rgba(52,211,153,0.8)]">
-                        <Unlock size={16} /> ACCESS GRANTED
-                    </p>
-                    <p className="text-emerald-600 text-xs font-mono">Select a fragment to proceed.</p>
-                </motion.div>
-            )}
-        </AnimatePresence>
+        <motion.div 
+            key="unlocked-msg"
+            initial={{ opacity: 0, scale: 0.9, filter: 'blur(5px)' }}
+            animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="flex flex-col items-center gap-2 p-6"
+        >
+            <p className="text-emerald-300 font-mono text-sm tracking-widest uppercase flex items-center gap-2 drop-shadow-[0_0_5px_rgba(52,211,153,0.8)]">
+                <Unlock size={16} /> ACCESS GRANTED
+            </p>
+            <p className="text-emerald-600 text-xs font-mono">Select a fragment to proceed.</p>
+        </motion.div>
       </div>
 
       {/* 4-Leaf Clover Layout */}

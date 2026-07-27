@@ -2,6 +2,7 @@
 import { SideStoryVolume, Chapter } from '../types';
 import { chapterC44_01 } from './side_story_files/C44_01';
 import { chapterC44_02 } from './side_story_files/C44_02';
+import { chapterC44_03 } from './side_story_files/C44_03';
 
 const createCloverChapter = (idx: number, status: 'published' | 'locked' = 'locked'): Chapter => ({
     id: `story-collab-44-${idx}`,
@@ -30,7 +31,7 @@ export const sideStoryVolumes: SideStoryVolume[] = [
     chapters: [
       chapterC44_01,
       chapterC44_02,
-      createCloverChapter(3),
+      chapterC44_03,
       createCloverChapter(4),
       createCloverChapter(5),
       createCloverChapter(6),

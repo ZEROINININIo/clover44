@@ -98,7 +98,7 @@ const VoidVisionCard: React.FC<{ content: string; language: Language }> = ({ con
 };
 
 const parseRichText = (text: string, language: Language) => {
-  const parts = text.split(/(\[\[(?:MASK|GLITCH_GREEN|GREEN|VOID|GREY_MYSTIC|DANGER|BLUE|WHITE|VOID_VISION)::.*?\]\])/g);
+  const parts = text.split(/(\[\[(?:MASK|GLITCH_GREEN|GREEN|DARK_GREEN|VOID|GREY_MYSTIC|DANGER|BLUE|WHITE|VOID_VISION)::.*?\]\])/g);
   return parts.map((part, index) => {
     if (part.startsWith('[[MASK::') && part.endsWith(']]')) {
       const content = part.slice(8, -2);
@@ -144,6 +144,9 @@ const parseRichText = (text: string, language: Language) => {
             {content}
         </span>
       );
+    } else if (part.startsWith('[[DARK_GREEN::') && part.endsWith(']]')) {
+      const content = part.slice(14, -2);
+      return <span key={index} className="text-emerald-800 font-black drop-shadow-[0_0_8px_rgba(4,120,87,0.5)] tracking-wide">{content}</span>;
     } else if (part.startsWith('[[BLUE::') && part.endsWith(']]')) {
       const content = part.slice(8, -2);
       return (

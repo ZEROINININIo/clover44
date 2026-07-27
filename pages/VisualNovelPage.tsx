@@ -232,7 +232,7 @@ const VisualNovelPage: React.FC<VisualNovelPageProps> = ({ chapter, onNextChapte
   // --- Rich Text Parser (Theme Aware) ---
   const parseRichText = (text: string) => {
     // Regex includes VOID_VISION
-    const parts = text.split(/(\[\[(?:MASK|GLITCH_GREEN|GREEN|VOID|DANGER|BLUE|WHITE|VOID_VISION)::.*?\]\])/g);
+    const parts = text.split(/(\[\[(?:MASK|GLITCH_GREEN|GREEN|DARK_GREEN|VOID|DANGER|BLUE|WHITE|VOID_VISION)::.*?\]\])/g);
     return parts.map((part, index) => {
         if (part.startsWith('[[MASK::') && part.endsWith(']]')) {
             const content = part.slice(8, -2);
@@ -260,7 +260,7 @@ const VisualNovelPage: React.FC<VisualNovelPageProps> = ({ chapter, onNextChapte
                     </div>
                  );
              }
-             if (part.startsWith('[[BLUE::') || part.startsWith('[[GREEN::') || part.startsWith('[[VOID::')) {
+             if (part.startsWith('[[BLUE::') || part.startsWith('[[GREEN::') || part.startsWith('[[DARK_GREEN::') || part.startsWith('[[VOID::')) {
                  // In BW mode, colored text becomes emphasized white text with a glitch or highlight
                  const content = part.replace(/^\[\[.*?::/, '').slice(0, -2);
                  return createSpan(content, 'text-white', 'font-bold bg-white/20 px-1 border-b border-white');
@@ -308,6 +308,10 @@ const VisualNovelPage: React.FC<VisualNovelPageProps> = ({ chapter, onNextChapte
         if (part.startsWith('[[DANGER::') && part.endsWith(']]')) {
             const content = part.slice(10, -2);
             return createSpan(content, 'text-red-600', 'font-black animate-crash origin-left inline-block px-1');
+        }
+        if (part.startsWith('[[DARK_GREEN::') && part.endsWith(']]')) {
+            const content = part.slice(14, -2);
+            return <span key={index} className="text-emerald-800 font-black drop-shadow-[0_0_8px_rgba(4,120,87,0.5)] tracking-wide">{content}</span>;
         }
         if (part.startsWith('[[BLUE::') && part.endsWith(']]')) {
             const content = part.slice(8, -2);

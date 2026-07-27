@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SideStoryVolume, Language } from '../types';
-import { Lock, Unlock } from 'lucide-react';
+import { Lock } from 'lucide-react';
 
 interface CloverDirectoryProps {
   volume: SideStoryVolume;
@@ -97,19 +97,6 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
             </h1>
             <p className="text-emerald-500 font-mono tracking-widest text-sm mb-6">FORTY-FOUR AND A HALF</p>
         </motion.div>
-        
-        <motion.div 
-            key="unlocked-msg"
-            initial={{ opacity: 0, scale: 0.9, filter: 'blur(5px)' }}
-            animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex flex-col items-center gap-2 p-6"
-        >
-            <p className="text-emerald-300 font-mono text-sm tracking-widest uppercase flex items-center gap-2 drop-shadow-[0_0_5px_rgba(52,211,153,0.8)]">
-                <Unlock size={16} /> ACCESS GRANTED
-            </p>
-            <p className="text-emerald-600 text-xs font-mono">Select a fragment to proceed.</p>
-        </motion.div>
       </div>
 
       {/* 4-Leaf Clover Layout */}
@@ -127,10 +114,9 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.5, type: 'spring', stiffness: 100 }}
-            className={`top-0 left-0 ${leafBaseClasses}`}
-            style={{ borderRadius: '50% 50% 0% 50%' }}
+            className={`top-0 left-0 rounded-tl-[3rem] rounded-tr-xl rounded-bl-xl rounded-br-sm ${leafBaseClasses}`}
         >
-            <div className="absolute inset-0 bg-emerald-400/5 mix-blend-overlay pointer-events-none rounded-inherit"></div>
+            <div className="absolute inset-0 bg-emerald-400/5 mix-blend-overlay pointer-events-none rounded-[inherit]"></div>
             {renderLeafChapters(0, 1)}
         </motion.div>
 
@@ -139,10 +125,9 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.6, type: 'spring', stiffness: 100 }}
-            className={`top-0 right-0 ${leafBaseClasses}`}
-            style={{ borderRadius: '50% 50% 50% 0%' }}
+            className={`top-0 right-0 rounded-tr-[3rem] rounded-tl-xl rounded-br-xl rounded-bl-sm ${leafBaseClasses}`}
         >
-            <div className="absolute inset-0 bg-emerald-400/5 mix-blend-overlay pointer-events-none rounded-inherit"></div>
+            <div className="absolute inset-0 bg-emerald-400/5 mix-blend-overlay pointer-events-none rounded-[inherit]"></div>
             {renderLeafChapters(2, 3)}
         </motion.div>
 
@@ -151,10 +136,9 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.7, type: 'spring', stiffness: 100 }}
-            className={`bottom-0 right-0 ${leafBaseClasses}`}
-            style={{ borderRadius: '0% 50% 50% 50%' }}
+            className={`bottom-0 right-0 rounded-br-[3rem] rounded-bl-xl rounded-tr-xl rounded-tl-sm ${leafBaseClasses}`}
         >
-            <div className="absolute inset-0 bg-emerald-400/5 mix-blend-overlay pointer-events-none rounded-inherit"></div>
+            <div className="absolute inset-0 bg-emerald-400/5 mix-blend-overlay pointer-events-none rounded-[inherit]"></div>
             {renderLeafChapters(4, 5)}
         </motion.div>
 
@@ -163,10 +147,9 @@ const CloverDirectory: React.FC<CloverDirectoryProps> = ({ volume, onSelectChapt
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.8, type: 'spring', stiffness: 100 }}
-            className={`bottom-0 left-0 ${leafBaseClasses}`}
-            style={{ borderRadius: '50% 0% 50% 50%' }}
+            className={`bottom-0 left-0 rounded-bl-[3rem] rounded-br-xl rounded-tl-xl rounded-tr-sm ${leafBaseClasses}`}
         >
-            <div className="absolute inset-0 bg-emerald-400/5 mix-blend-overlay pointer-events-none rounded-inherit"></div>
+            <div className="absolute inset-0 bg-emerald-400/5 mix-blend-overlay pointer-events-none rounded-[inherit]"></div>
             {renderLeafChapters(6, 7)}
         </motion.div>
       </div>

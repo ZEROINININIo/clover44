@@ -37,31 +37,13 @@ const About44Half: React.FC<About44HalfProps> = ({ onBack, language, isUnlocked 
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="flex flex-col md:flex-row items-center md:items-start gap-8 border-b-2 border-emerald-900/50 pb-8"
+                    className="pb-12 pt-8"
                 >
-                    {/* Avatar Placeholder */}
-                    <div className="w-32 h-32 md:w-48 md:h-48 shrink-0 bg-emerald-950 border-4 border-emerald-800 flex items-center justify-center shadow-[0_0_30px_rgba(4,120,87,0.2)] relative overflow-hidden group">
-                        <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(52,211,153,0.1)_2px,rgba(52,211,153,0.1)_4px)] pointer-events-none mix-blend-overlay"></div>
-                        <span className="text-4xl md:text-6xl text-emerald-500 font-bold group-hover:scale-110 transition-transform duration-500">44</span>
-                        
-                        {/* Glitch overlay */}
-                        <div className="absolute inset-0 bg-emerald-400 opacity-0 group-hover:opacity-20 transition-opacity duration-75 mix-blend-color-dodge mix-blend-mode"></div>
-                    </div>
-
-                    <div className="text-center md:text-left flex-1">
-                        <h1 className="text-4xl md:text-5xl font-bold tracking-widest text-emerald-300 drop-shadow-[0_0_10px_rgba(52,211,153,0.5)] mb-2">
-                            四十四又二分之一 (44half/四四酱)
+                    <div className="text-center md:text-left">
+                        <h1 className="text-3xl md:text-4xl font-bold text-emerald-300 mb-2">
+                            四十四又二分之一
                         </h1>
-                        <p className="text-emerald-600 tracking-[0.3em] text-sm md:text-base mb-4">GUEST? // DARK CLOVER</p>
-                        
-                        <div className="flex flex-wrap justify-center md:justify-start gap-2">
-                            <span className="px-2 py-1 bg-emerald-900/50 border border-emerald-700 text-emerald-300 text-xs flex items-center gap-1">
-                                <Terminal size={12} /> STATUS: {stage >= 2 ? 'a' : 'b'}
-                            </span>
-                            <span className="px-2 py-1 bg-emerald-900/50 border border-emerald-700 text-emerald-300 text-xs flex items-center gap-1">
-                                <Cpu size={12} /> TYPE: User(?)
-                            </span>
-                        </div>
+                        <p className="text-emerald-600 tracking-widest text-xs md:text-sm font-mono uppercase">44half / 四四酱</p>
                     </div>
                 </motion.div>
 

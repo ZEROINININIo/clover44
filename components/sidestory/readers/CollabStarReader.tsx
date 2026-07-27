@@ -232,7 +232,7 @@ export const CollabStarReader: React.FC<CollabStarReaderProps> = ({
 
     // Rich Text Parser adapted for Collab Theme
     const parseRichText = (text: string) => {
-        const parts = text.split(/(\[\[(?:MASK|GLITCH_GREEN|GREEN|VOID|GREY_MYSTIC|DANGER|BLUE|WHITE|VOID_VISION)::.*?\]\])/g);
+        const parts = text.split(/(\[\[(?:MASK|GLITCH_GREEN|GREEN|DARK_GREEN|VOID|GREY_MYSTIC|DANGER|BLUE|WHITE|VOID_VISION)::.*?\]\])/g);
         return parts.map((part, index) => {
             if (part.startsWith('[[MASK::') && part.endsWith(']]')) {
                 return <MaskedText key={index}>{part.slice(8, -2)}</MaskedText>;
@@ -251,6 +251,9 @@ export const CollabStarReader: React.FC<CollabStarReaderProps> = ({
             }
             if (part.startsWith('[[DANGER::')) {
                 return <span key={index} className="text-red-500 font-bold animate-shake-violent inline-block">{part.slice(10, -2)}</span>;
+            }
+            if (part.startsWith('[[DARK_GREEN::')) {
+                return <span key={index} className="text-emerald-800 font-black drop-shadow-[0_0_8px_rgba(4,120,87,0.5)] tracking-wide">{part.slice(14, -2)}</span>;
             }
             if (part.startsWith('[[BLUE::')) {
                 return <span key={index} className="text-cyan-400 font-bold">{part.slice(8, -2)}</span>;
